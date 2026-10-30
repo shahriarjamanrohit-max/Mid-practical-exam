@@ -55,4 +55,105 @@ h2 {
     height: 200px;
 }
 
+/* Products Page - Grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
 
+/* Product Cards */
+.card {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+}
+
+/* Buttons */
+button {
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+}
+
+/* Cart */
+#cart,
+#total {
+    text-align: center;
+}
+
+/* Contact Images */
+.contact-images {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+.contact-images img {
+    width: 50%;
+    height: 200px;
+}
+
+/* Contact Information */
+.contact-info,
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Form */
+.contact-form {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Mobile Screen */
+@media (max-width: 600px) {
+    .home,
+    .contact-images {
+        flex-direction: column;
+    }
+
+    .home div,
+    .contact-images img {
+        width: 100%;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
